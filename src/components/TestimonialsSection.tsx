@@ -15,8 +15,8 @@ const testimonials = [
     img: client2,
   },
   {
-    name: "Tiago Roberto",
-    text: "Desde que descobri a Styleth, não vou em outro lugar. O plano por assinatura é genial!",
+    name: "Tiago Roberts",
+    text: "Desde que descobri a Navalha Sampa, não vou em outro lugar. O Clube Flex é genial!",
     img: client3,
   },
 ];
@@ -25,16 +25,16 @@ const TestimonialsSection = () => {
   return (
     <section id="depoimentos" className="py-20">
       <div className="container">
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 animate-on-scroll">
           <h2 className="text-3xl md:text-4xl font-black">
             Quem Vive A <span className="gold-text">Experiência</span><br />
-            Styleth Recomenda.
+            Navalha Sampa Recomenda.
           </h2>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {testimonials.map((t) => (
-            <div key={t.name} className="bg-card border border-border rounded-xl p-6 hover-glow transition-all">
+            <div key={t.name} className="animate-on-scroll bg-card border border-primary/30 rounded-xl p-6 hover-glow transition-all">
               <div className="flex mb-3">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} size={16} className="fill-primary text-primary" />

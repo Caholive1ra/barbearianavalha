@@ -4,28 +4,35 @@ import { Badge } from "@/components/ui/badge";
 
 const plans = [
   {
-    name: "Plano Platinum",
-    price: "R$ 89,90",
+    name: "Plano FLEX Corte",
+    price: "R$ 99,90",
     period: "/mês",
     popular: false,
-    features: ["Corte de Cabelo", "Barba Simples"],
+    features: [
+      "Corte de Cabelo ILIMITADO (Segunda a Quinta)",
+      "Desconto em Produtos",
+    ],
   },
   {
-    name: "Plano Gold",
-    price: "R$ 109,90",
+    name: "Plano FLEX Combo",
+    price: "R$ 189,90",
     period: "/mês",
     popular: true,
-    features: ["Corte de Cabelo", "Barba Simples", "Sobrancelha", "Hidratação"],
+    features: [
+      "Corte de Cabelo ILIMITADO (Segunda a Quinta)",
+      "Corte de Barba ILIMITADO (Segunda a Quinta)",
+      "Desconto em Produtos",
+    ],
   },
 ];
 
-const extras = ["Relaxamento", "Coloração", "Platinado", "Luzes"];
+const extras = ["Barboterapia", "Relaxamento", "Coloração", "Penteado", "Luzes"];
 
 const PricingSection = () => {
   return (
     <section id="planos" className="py-20 bg-secondary">
       <div className="container">
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 animate-on-scroll">
           <h2 className="text-3xl md:text-4xl font-black">
             Escolha o Plano Que<br />
             <span className="gold-text">Eleva Seu Estilo.</span>
@@ -34,7 +41,7 @@ const PricingSection = () => {
 
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto items-start">
           {plans.map((plan) => (
-            <div key={plan.name} className={`relative rounded-xl p-6 border transition-all hover-glow ${plan.popular ? "border-primary gold-glow bg-card" : "border-border bg-card"}`}>
+            <div key={plan.name} className={`animate-on-scroll relative rounded-xl p-6 border transition-all hover-glow ${plan.popular ? "border-primary gold-glow bg-card" : "border-border bg-card"}`}>
               {plan.popular && (
                 <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 gold-gradient text-primary-foreground font-bold px-4">
                   <Crown size={14} className="mr-1" /> MAIS POPULAR
@@ -42,7 +49,7 @@ const PricingSection = () => {
               )}
 
               <div className="text-center mb-6 pt-2">
-                <h3 className="text-xl font-bold">{plan.name}</h3>
+                <h3 className="text-xl font-bold gold-text">{plan.name}</h3>
               </div>
 
               <div className="space-y-3 mb-6">
@@ -65,9 +72,8 @@ const PricingSection = () => {
             </div>
           ))}
 
-          {/* Extras */}
-          <div className="rounded-xl p-6 border border-border bg-card">
-            <h3 className="text-xl font-bold mb-4">Serviços Adicionais</h3>
+          <div className="animate-on-scroll rounded-xl p-6 border border-primary/30 bg-card">
+            <h3 className="text-xl font-bold gold-text mb-4">Serviços Adicionais</h3>
             <div className="space-y-3">
               {extras.map((e) => (
                 <div key={e} className="flex items-center gap-2">

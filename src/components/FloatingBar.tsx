@@ -9,10 +9,10 @@ const FloatingBar = () => {
           {[...Array(5)].map((_, i) => (
             <Star key={i} size={12} className="fill-primary text-primary" />
           ))}
-          <span className="text-xs text-muted-foreground ml-1">+3.200</span>
+          <span className="text-xs text-muted-foreground ml-1">+1.198</span>
         </div>
         <Button className="gold-gradient text-primary-foreground font-bold text-sm px-4 py-2 rounded-lg hover-glow" size="sm">
-          <Scissors size={14} className="mr-1" /> AGENDE AGORA
+          <Scissors size={14} className="mr-1" /> AGENDAR AGORA
         </Button>
       </div>
     </div>
