@@ -3,16 +3,16 @@ import barber2 from "@/assets/barber2.jpg";
 import barber3 from "@/assets/barber3.jpg";
 
 const barbers = [
-  { name: "Reymon de Souza", img: barber1 },
-  { name: "Mateus Pinheiro", img: barber2 },
-  { name: "Rogê Santos", img: barber3 },
+  { name: "Ricardo 'Rico' Silva", role: "Especialista em Degradê", img: barber1 },
+  { name: "Paulo Nava Junior", role: "Barbeiro & Barboterapia", img: barber2 },
+  { name: "Davi Santos", role: "Coloração & Platinado", img: barber3 },
 ];
 
 const TeamSection = () => {
   return (
     <section className="py-20">
       <div className="container">
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 animate-on-scroll">
           <h2 className="text-3xl md:text-4xl font-black">
             Nossos <span className="gold-text">Barbeiros</span>:
           </h2>
@@ -23,13 +23,14 @@ const TeamSection = () => {
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
           {barbers.map((b) => (
-            <div key={b.name} className="group relative">
-              <div className="relative overflow-hidden rounded-xl">
-                <div className="absolute inset-0 gold-gradient opacity-30 group-hover:opacity-50 transition-opacity" />
-                <img src={b.img} alt={b.name} className="w-full aspect-square object-cover rounded-xl group-hover:scale-105 transition-transform duration-300" />
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-background/90 to-transparent p-4">
-                  <p className="font-bold text-sm">{b.name}</p>
-                </div>
+            <div key={b.name} className="animate-on-scroll group text-center">
+              <div className="relative mx-auto w-40 h-40 mb-4">
+                <div className="absolute inset-0 rounded-full gold-gradient opacity-40 group-hover:opacity-70 transition-opacity scale-105" />
+                <img src={b.img} alt={b.name} className="w-full h-full object-cover rounded-full border-2 border-primary relative z-10 group-hover:scale-105 transition-transform duration-300" />
+              </div>
+              <div className="bg-card border border-primary/30 rounded-xl p-4 hover-glow">
+                <p className="font-bold text-sm">{b.name}</p>
+                <p className="text-xs text-muted-foreground mt-1">{b.role}</p>
               </div>
             </div>
           ))}
