@@ -17,7 +17,7 @@ const HeroSection = () => {
                   <Star key={i} size={16} className="fill-primary text-primary" />
                 ))}
               </div>
-              <span className="text-sm text-muted-foreground">+1.198 seguidores</span>
+              <span className="text-sm text-muted-foreground">@navalhasampabarbearia</span>
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight">

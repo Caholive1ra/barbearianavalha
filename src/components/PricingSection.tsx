@@ -4,23 +4,32 @@ import { Badge } from "@/components/ui/badge";
 
 const plans = [
   {
-    name: "Plano FLEX Corte",
+    name: "Clube Flex: Cabelo",
     price: "R$ 99,90",
     period: "/mês",
     popular: false,
     features: [
-      "Corte de Cabelo ILIMITADO (Segunda a Quinta)",
+      "Corte de cabelo ilimitado de segunda à quinta-feira",
       "Desconto em Produtos",
     ],
   },
   {
-    name: "Plano FLEX Combo",
+    name: "Clube Flex: Barba",
+    price: "R$ 119,90",
+    period: "/mês",
+    popular: false,
+    features: [
+      "Corte de barba ilimitado de segunda à quinta-feira",
+      "Desconto em Produtos",
+    ],
+  },
+  {
+    name: "Clube Flex: Cabelo + Barba",
     price: "R$ 189,90",
     period: "/mês",
     popular: true,
     features: [
-      "Corte de Cabelo ILIMITADO (Segunda a Quinta)",
-      "Corte de Barba ILIMITADO (Segunda a Quinta)",
+      "Cabelo e barba ilimitados de segunda à quinta-feira",
       "Desconto em Produtos",
     ],
   },
@@ -37,9 +46,12 @@ const PricingSection = () => {
             Escolha o Plano Que<br />
             <span className="gold-text">Eleva Seu Estilo.</span>
           </h2>
+          <p className="text-muted-foreground mt-4 text-lg">
+            Corte Tradicional — a partir de <span className="font-bold text-primary">R$ 40,00</span>
+          </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto items-start">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto items-start">
           {plans.map((plan) => (
             <div key={plan.name} className={`animate-on-scroll relative rounded-xl p-6 border transition-all hover-glow ${plan.popular ? "border-primary gold-glow bg-card" : "border-border bg-card"}`}>
               {plan.popular && (
@@ -49,7 +61,7 @@ const PricingSection = () => {
               )}
 
               <div className="text-center mb-6 pt-2">
-                <h3 className="text-xl font-bold gold-text">{plan.name}</h3>
+                <h3 className="text-lg font-bold gold-text">{plan.name}</h3>
               </div>
 
               <div className="space-y-3 mb-6">

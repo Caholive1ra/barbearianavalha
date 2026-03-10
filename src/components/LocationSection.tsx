@@ -32,7 +32,7 @@ const LocationSection = () => {
                 <MapPin size={20} className="text-primary flex-shrink-0 mt-0.5" />
                 <div>
                   <p className="font-semibold">Endereço</p>
-                  <p className="text-sm text-muted-foreground">Rua Bento Freitas, 196 - Centro, São Paulo - SP</p>
+                  <p className="text-sm text-muted-foreground">Rua Bento Freitas, 196 - República, São Paulo - SP (Vila Buarque)</p>
                 </div>
               </div>
 

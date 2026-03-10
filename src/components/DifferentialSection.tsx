@@ -17,16 +17,15 @@ const DifferentialSection = () => {
 
           <div className="space-y-6 animate-on-scroll">
             <h2 className="text-3xl md:text-4xl font-black leading-tight">
-              1ª Barbearia<br />
-              <span className="gold-text">Por Assinatura</span><br />
-              No Centro de Sampa!
+              O Sucesso é<br />
+              <span className="gold-text">Compartilhado.</span>
             </h2>
 
             <p className="text-muted-foreground leading-relaxed">
-              A Navalha Sampa nasceu com um propósito: oferecer o corte que muda sua imagem, sem surpresas no bolso. Com o Clube Flex, você tem acesso ilimitado a cortes de cabelo e barba de segunda a quinta, com a agilidade do Centro de São Paulo.
+              A história da Navalha Sampa começa com nosso fundador, Jair Badia, um verdadeiro exemplo de superação. Buscamos muito mais do que apenas cortar cabelo: queremos transformar o universo da barbearia.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Nosso espaço combina o melhor da estética masculina com um ambiente moderno, cadeiras de couro premium e profissionais que entendem seu estilo. Agende online e venha viver a experiência.
+              Aqui, você não é apenas mais um, você faz parte de um time que acredita no talento, na liberdade e no respeito ao seu estilo.
             </p>
 
             <div className="flex items-center gap-2">
@@ -36,7 +35,7 @@ const DifferentialSection = () => {
 
             <div className="flex flex-wrap gap-4">
               <Button className="gold-gradient hover-glow text-primary-foreground font-bold px-6 py-5 rounded-lg">
-                <Scissors className="mr-2" size={18} /> AGENDAR HORÁRIO
+                <Scissors className="mr-2" size={18} /> AGENDAR NO APPBARBER
               </Button>
               <Button variant="outline" className="border-primary text-primary hover:bg-primary/10 font-bold px-6 py-5 rounded-lg hover-glow">
                 VER PLANOS
