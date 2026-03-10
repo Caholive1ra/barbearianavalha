@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navalha Sampa Barbearia | Barbearia Premium no Centro de São Paulo</title>
+    <meta name="description" content="Barbearia premium no Centro de São Paulo. Clube Flex com cortes ilimitados a partir de R$ 99,90/mês. Agende pelo WhatsApp! Rua Bento Freitas, 196 - República." />
+    <meta name="author" content="Navalha Sampa Barbearia" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- SEO Local / Geo -->
+    <meta name="geo.region" content="BR-SP" />
+    <meta name="geo.placename" content="São Paulo" />
+    <meta name="geo.position" content="-23.5435;-46.6478" />
+    <meta name="ICBM" content="-23.5435, -46.6478" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Navalha Sampa | Barbearia Premium no Centro de SP" />
+    <meta property="og:description" content="A experiência que seu estilo merece. Cortes ilimitados por assinatura no Centro de São Paulo. Agende pelo WhatsApp!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/logo.png" />
+    <meta property="og:locale" content="pt_BR" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Navalha Sampa | Barbearia Premium no Centro de SP" />
+    <meta name="twitter:description" content="Cortes ilimitados por assinatura no Centro de São Paulo. Agende pelo WhatsApp!" />
+    <meta name="twitter:image" content="/logo.png" />
+
+    <!-- Mobile -->
+    <meta name="theme-color" content="#000000" />
+
+    <!-- Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+    <!-- Structured Data: BarberShop (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BarberShop",
+      "name": "Navalha Sampa Barbearia",
+      "description": "Barbearia premium no Centro de São Paulo com planos de assinatura para cortes ilimitados.",
+      "image": "/logo.png",
+      "telephone": "+55-11-97751-8335",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rua Bento Freitas, 196",
+        "addressLocality": "São Paulo",
+        "addressRegion": "SP",
+        "postalCode": "01220-000",
+        "addressCountry": "BR",
+        "areaServed": "Centro de São Paulo"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -23.5435,
+        "longitude": -46.6478
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "09:00",
+          "closes": "21:00"
+        }
+      ],
+      "priceRange": "$$",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "1198"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Planos de Assinatura",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "Clube Flex: Cabelo",
+            "price": "99.90",
+            "priceCurrency": "BRL",
+            "description": "Corte de cabelo ilimitado de segunda à quinta-feira"
+          },
+          {
+            "@type": "Offer",
+            "name": "Clube Flex: Cabelo + Barba",
+            "price": "189.90",
+            "priceCurrency": "BRL",
+            "description": "Cabelo e barba ilimitados de segunda à quinta-feira"
+          },
+          {
+            "@type": "Offer",
+            "name": "Clube Flex: Barba",
+            "price": "119.90",
+            "priceCurrency": "BRL",
+            "description": "Corte de barba ilimitado de segunda à quinta-feira"
+          }
+        ]
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
