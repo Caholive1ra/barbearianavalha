@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X, Instagram } from "lucide-react";
+import WhatsAppIcon from "@/components/WhatsAppIcon";
 import logo from "@/assets/navalha-logo.png";
 
 const navLinks = [
@@ -15,9 +16,9 @@ const Navbar = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
-      <nav className="container flex items-center justify-between h-16 md:h-20" aria-label="Navegação principal">
+      <nav className="container flex items-center justify-between h-20 md:h-24" aria-label="Navegação principal">
         <a href="#" className="flex items-center gap-2">
-          <img src={logo} alt="Navalha Sampa Barbearia" className="h-10 md:h-12" width="auto" height="48" />
+          <img src={logo} alt="Navalha Sampa Barbearia" className="h-14 md:h-16" width="auto" height="64" />
         </a>
 
         <div className="hidden md:flex items-center gap-8">
@@ -30,6 +31,7 @@ const Navbar = () => {
 
         <div className="hidden md:flex items-center gap-3">
           <a href="https://www.instagram.com/navalhasampabarbearia" target="_blank" rel="noopener noreferrer" aria-label="Instagram da Navalha Sampa" className="text-muted-foreground hover:text-primary transition-colors"><Instagram size={18} /></a>
+          <a href="https://wa.me/5511977518335" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp da Navalha Sampa" className="text-muted-foreground hover:text-[#25D366] transition-colors"><WhatsAppIcon size={18} /></a>
         </div>
 
         <button

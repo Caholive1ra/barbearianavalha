@@ -57,13 +57,13 @@ const PricingSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto items-center">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto items-center">
           {plans.map((plan) => (
             <div
               key={plan.name}
               className={`animate-on-scroll relative rounded-xl p-6 border transition-all hover-glow ${plan.popular
-                  ? "border-primary gold-glow bg-card md:scale-105 z-10"
-                  : "border-border bg-card"
+                ? "border-primary gold-glow bg-card md:scale-105 z-10"
+                : "border-border bg-card"
                 }`}
             >
               {plan.popular && (
@@ -95,8 +95,8 @@ const PricingSection = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`block w-full text-center rounded-lg font-bold py-3 hover-glow transition-colors ${plan.popular
-                    ? "gold-gradient text-primary-foreground"
-                    : "bg-muted text-foreground hover:bg-muted/80"
+                  ? "gold-gradient text-primary-foreground"
+                  : "bg-muted text-foreground hover:bg-muted/80"
                   }`}
               >
                 QUERO ESTE PLANO

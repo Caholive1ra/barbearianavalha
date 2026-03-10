@@ -7,7 +7,7 @@ const APPBARBER_LINK = "https://sites.appbarber.com.br/httpsnvs";
 
 const HeroSection = () => {
   return (
-    <section className="relative pt-20 md:pt-24 pb-16 md:pb-24 overflow-hidden">
+    <section className="relative pt-24 md:pt-28 pb-16 md:pb-24 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-background via-background to-surface-dark" />
       <div className="container relative z-10">
         <div className="grid md:grid-cols-2 gap-10 items-center">

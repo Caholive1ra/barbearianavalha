@@ -8,6 +8,7 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import LocationSection from "@/components/LocationSection";
 import Footer from "@/components/Footer";
 import FloatingBar from "@/components/FloatingBar";
+import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 
 const Index = () => {
   useScrollAnimation();
@@ -25,6 +26,7 @@ const Index = () => {
       </main>
       <Footer />
       <FloatingBar />
+      <FloatingWhatsApp />
     </>
   );
 };
