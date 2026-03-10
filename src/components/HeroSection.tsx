@@ -17,26 +17,25 @@ const HeroSection = () => {
                   <Star key={i} size={16} className="fill-primary text-primary" />
                 ))}
               </div>
-              <span className="text-sm text-muted-foreground">+1.198 seguidores</span>
+              <span className="text-sm text-muted-foreground">@navalhasampabarbearia</span>
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight">
-              A Experiência Que{" "}
-              <span className="gold-text">Seu Estilo</span>{" "}
-              Merece.
+              Mais que corte,{" "}
+              <span className="gold-text">é atitude.</span>
             </h1>
 
             <p className="text-muted-foreground text-lg max-w-md">
-              Régua em dia, sem surpresas. A primeira barbearia ilimitada no Centro de São Paulo. Agende online agora.
+              A Barbearia Premium do Centro de Sampa. Estilo, conforto e planos de assinatura exclusivos para o seu dia a dia na República.
             </p>
 
             <div className="flex flex-wrap gap-4">
               <Button className="gold-gradient hover-glow text-primary-foreground font-bold px-8 py-6 text-base rounded-lg">
                 <Scissors className="mr-2" size={18} />
-                AGENDAR HORÁRIO
+                AGENDAR NO APPBARBER
               </Button>
               <Button variant="outline" className="border-primary text-primary hover:bg-primary/10 font-bold px-8 py-6 text-base rounded-lg hover-glow">
-                CONHECER CLUBE FLEX
+                VER PLANOS
               </Button>
             </div>
           </div>
