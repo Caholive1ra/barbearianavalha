@@ -9,6 +9,7 @@ import LocationSection from "@/components/LocationSection";
 import Footer from "@/components/Footer";
 import FloatingBar from "@/components/FloatingBar";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
+import { Analytics } from "@vercel/analytics/react";
 
 const Index = () => {
   useScrollAnimation();
@@ -27,6 +28,7 @@ const Index = () => {
       <Footer />
       <FloatingBar />
       <FloatingWhatsApp />
+      <Analytics />
     </>
   );
 };
