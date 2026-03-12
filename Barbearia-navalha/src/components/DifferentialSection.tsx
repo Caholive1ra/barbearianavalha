@@ -10,7 +10,7 @@ const DifferentialSection = () => {
       <div className="container">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="relative animate-on-scroll">
-            <img src={interior2} alt="Interior da barbearia Navalha Sampa com ambiente acolhedor" className="rounded-xl w-full h-[400px] object-cover" loading="lazy" decoding="async" />
+            <img src={interior2} alt="Ambiente exclusivo e acolhedor da barbearia Navalha Sampa na República, São Paulo" className="rounded-xl w-full h-[400px] object-cover" loading="lazy" decoding="async" />
             <div className="absolute bottom-4 left-4 bg-background/80 backdrop-blur-sm p-3 rounded-lg">
               <img src={logo} alt="Logo Navalha Sampa" className="h-12" />
             </div>

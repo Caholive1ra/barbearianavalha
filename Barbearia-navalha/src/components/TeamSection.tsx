@@ -14,7 +14,7 @@ const BarberCard = ({ b }: { b: typeof barbers[0] }) => (
   <div className="group text-center">
     <div className="relative mx-auto w-40 h-40 mb-4">
       <div className="absolute inset-0 rounded-full gold-gradient opacity-40 group-hover:opacity-70 transition-opacity scale-105" />
-      <img src={b.img} alt={b.name} className="w-full h-full object-cover rounded-full border-2 border-primary relative z-10 group-hover:scale-105 transition-transform duration-300" />
+      <img src={b.img} alt={`Foto do barbeiro especialista ${b.name} - Navalha Sampa`} className="w-full h-full object-cover rounded-full border-2 border-primary relative z-10 group-hover:scale-105 transition-transform duration-300" />
     </div>
     <div className="bg-card border border-primary/30 rounded-xl p-4 hover-glow">
       <p className="font-bold text-sm">{b.name}</p>

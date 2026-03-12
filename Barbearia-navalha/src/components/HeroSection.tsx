@@ -51,13 +51,13 @@ const HeroSection = () => {
 
           <div className="grid grid-cols-3 gap-3 h-[400px] md:h-[500px] animate-on-scroll">
             <div className="col-span-1 rounded-xl overflow-hidden">
-              <img src={interior1} alt="Interior moderno da barbearia Navalha Sampa com cadeiras premium" className="w-full h-full object-cover" loading="lazy" decoding="async" />
+              <img src={interior1} alt="Ambiente interno da barbearia Navalha Sampa no Centro de São Paulo, com cadeiras de barbeiro premium" className="w-full h-full object-cover" loading="lazy" decoding="async" />
             </div>
             <div className="col-span-1 rounded-xl overflow-hidden -mt-6">
-              <img src={interior2} alt="Barbeiros profissionais trabalhando na Navalha Sampa" className="w-full h-full object-cover" loading="lazy" decoding="async" />
+              <img src={interior2} alt="Barbeiros profissionais realizando cortes de cabelo e barba na barbearia Navalha Sampa" className="w-full h-full object-cover" loading="lazy" decoding="async" />
             </div>
             <div className="col-span-1 rounded-xl overflow-hidden mt-6">
-              <img src={banner} alt="Ambiente premium da barbearia Navalha Sampa no Centro de São Paulo" className="w-full h-full object-cover" loading="lazy" decoding="async" />
+              <img src={banner} alt="Fachada e recepção da melhor barbearia no Centro de São Paulo, Navalha Sampa" className="w-full h-full object-cover" loading="lazy" decoding="async" />
             </div>
           </div>
         </div>
